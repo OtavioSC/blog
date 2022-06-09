@@ -21,10 +21,24 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Hello visitant, i'm Otavio, a Brazilian Software Developer</p>
+        <p>Hello, i'm Otavio. This is just a Brazilian Software Developer normal blog. Have fun!</p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
+        <h2> What am I currently learning?</h2>
+        <ul className={utilStyles.list}>
+          <li>
+            <a>🗄️ GraphQL</a>
+          </li>
+          <li>
+            <a>🦀 Rust</a>
+          </li>
+          <li>
+            <a>🌐 Neural network and Deep Learning</a>
+          </li>
+        </ul>
+      </section>
+      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+        <h2>Blog</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
