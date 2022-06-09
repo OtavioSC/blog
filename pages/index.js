@@ -23,7 +23,17 @@ export default function Home({ allPostsData }) {
       <section className={utilStyles.headingMd}>
         <p>Hello, i'm Otavio. This is just a Brazilian Software Developer normal blog. Have fun!</p>
       </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+      <section className={`${utilStyles.headingMd}`}>
+          <Link href="/about">
+              <h2> About me →</h2>
+          </Link>
+      </section>
+      <section className={`${utilStyles.headingMd}`}>
+          <Link href="/projects">
+              <h2> Projects →</h2>
+          </Link>
+      </section>
+      <section className={`${utilStyles.headingMd}`}>
         <h2> What am I currently learning?</h2>
         <ul className={utilStyles.list}>
           <li>
@@ -37,7 +47,7 @@ export default function Home({ allPostsData }) {
           </li>
         </ul>
       </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+      <section className={`${utilStyles.headingMd}`}>
         <h2>Blog</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (

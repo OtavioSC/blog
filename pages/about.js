@@ -6,7 +6,7 @@ import utilStyles from '../styles/utils.module.css'
 export default function About() {
     return(
        <Layout about>
-           <Head>About</Head>
+           <Head>About me</Head>
            <section className={utilStyles.headingMd}>
              <p>
             Since I was 7, I am very excited about everything the digital ecosystem encompasses, as that was when I had the privilege of 
