@@ -25,30 +25,30 @@ export default function Home({ allPostsData }) {
       </section>
       <section className={`${utilStyles.headingMd}`}>
           <Link href="/about">
-              <h2> About me →</h2>
+              <h2> 👨‍🎓 About me →</h2>
           </Link>
       </section>
       <section className={`${utilStyles.headingMd}`}>
           <Link href="/projects">
-              <h2> Projects →</h2>
+              <h2> 🤖 Projects →</h2>
           </Link>
       </section>
       <section className={`${utilStyles.headingMd}`}>
-        <h2> What am I currently learning?</h2>
+        <h2> 📚 What am I currently learning?</h2>
         <ul className={utilStyles.list}>
           <li>
-            <a>🗄️ GraphQL</a>
+            <a> GraphQL</a>
           </li>
           <li>
             <a>🦀 Rust</a>
           </li>
           <li>
-            <a>🌐 Neural network and Deep Learning</a>
+            <a>Neural network and Deep Learning</a>
           </li>
         </ul>
       </section>
       <section className={`${utilStyles.headingMd}`}>
-        <h2>Blog</h2>
+        <h2> 📰 Blog</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
