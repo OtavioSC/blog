@@ -21,7 +21,7 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Hello, i'm Otavio. This is just a Brazilian Software Developer normal blog. Have fun!</p>
+        <p>Hello, i'm Otavio. This is just a Brazilian Software Developer normal blog.</p>
       </section>
       <section className={`${utilStyles.headingMd}`}>
           <Link href="/about">
@@ -37,10 +37,10 @@ export default function Home({ allPostsData }) {
         <h2> 📚 What am I currently learning?</h2>
         <ul className={utilStyles.list}>
           <li>
-            <a> GraphQL</a>
+            <a>GraphQL</a>
           </li>
           <li>
-            <a>🦀 Rust</a>
+            <a>Rust</a>
           </li>
           <li>
             <a>Neural network and Deep Learning</a>

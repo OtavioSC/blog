@@ -6,6 +6,7 @@ import Link from 'next/link'
 
 const name = 'Otávio Carmo'
 export const siteTitle = 'OCarmo Blog'
+const src = "https://github.com/otavioSC.png"
 
 export default function Layout({ children, home }) {
   return (
@@ -20,8 +21,9 @@ export default function Layout({ children, home }) {
         {home ? (
           <>
             <Image
+              loader={() => src}
               priority
-              src="/images/profile.jpg"
+              src={src}
               className={utilStyles.borderCircle}
               height={144}
               width={144}
@@ -34,8 +36,9 @@ export default function Layout({ children, home }) {
             <Link href="/">
               <a>
                 <Image
+                  loader={() => src}
                   priority
-                  src="/images/profile.jpg"
+                  src={src}
                   className={utilStyles.borderCircle}
                   height={108}
                   width={108}
