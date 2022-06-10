@@ -33,8 +33,9 @@
     color: inherit;
   }
   
-  .padding1px {
-    padding-top: 0px;
+  .padding0px {
+    padding: 0;
+    margin: 0;
   }
   
   .list {
@@ -49,4 +50,13 @@
   
   .lightText {
     color: white;
+    padding: 0
+  }
+
+  .listWithBorder{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 0.4px;
+    margin-bottom: 1rem;
   }
