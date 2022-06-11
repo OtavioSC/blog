@@ -3,10 +3,11 @@ import Image from 'next/image'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
+import githubLogo from '../public/images/github.png'
 
 const name = 'Otávio Carmo'
-export const siteTitle = 'OCarmo Blog'
 const src = "https://github.com/otavioSC.png"
+export const siteTitle = 'OCarmo Blog'
 
 export default function Layout({ children, home }) {
   return (
@@ -30,6 +31,17 @@ export default function Layout({ children, home }) {
               alt={name}
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <div className={utilStyles.listContacts}>
+              <Link href="https://github.com/OtavioSC">
+                <a target="_blank">
+                <Image
+                  src={githubLogo}
+                  className={utilStyles.contacts}
+                  alt="github"
+                />
+                </a>
+              </Link>
+            </div>
           </>
         ) : (
           <>
@@ -51,6 +63,17 @@ export default function Layout({ children, home }) {
                 <a className={utilStyles.colorInherit}>{name}</a>
               </Link>
             </h2>
+              <div className={utilStyles.listContacts}>
+              <Link href="https://github.com/OtavioSC">
+                <a target="_blank">
+                <Image
+                  src={githubLogo}
+                  className={utilStyles.contacts}
+                  alt="github"
+                />
+                </a>
+              </Link>
+            </div>
           </>
         )}
       </header>

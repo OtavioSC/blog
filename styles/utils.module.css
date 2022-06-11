@@ -22,7 +22,7 @@
   
   .headingMd {
     font-size: 1.2rem;
-    line-height: 1.5;
+    line-height: 1.3;
   }
   
   .borderCircle {
@@ -59,4 +59,9 @@
     margin: 0;
     border: 0.4px;
     margin-bottom: 1rem;
+  }
+
+  .listContacts{
+    display: inline-block;
+    align-items: center;
   }
