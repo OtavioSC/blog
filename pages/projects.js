@@ -5,8 +5,14 @@ import Layout from "../components/layout"
 import utilStyles from '../styles/utils.module.css'
 
 export async function getServerSideProps() {
-    const res = await fetch('https://api.github.com/users/otaviosc/repos')
-    const data = await res.json()
+    const url = 'https://api.github.com/users/otaviosc/repos';
+    const data = await fetch(url)
+          .then((res) => {
+            return res.json()
+          })
+          .then((data) => {
+            return data;
+          })
   
     return { props: { data } }
 }
@@ -19,7 +25,7 @@ export default function About({data}) {
            <section className={utilStyles.headingMd}>
            <ul className={utilStyles.list}>
             {data.filter(({fork}) => !fork)
-                 .map(({ name, language, html_url, description }) => (
+                    .map(({ name, html_url, description }) => (
                 <li className={utilStyles.listWithBorder} key={name}>
                   <Link href={html_url}>
                     <a>💻️ {name}</a>
